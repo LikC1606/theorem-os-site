@@ -53,14 +53,14 @@
     </section>
   </main>
 
-  <footer class="feedback-footer"><div class="wrap"><span>© 2026 TheoremOS contributors</span><a href="index.html#start">申请内测<i data-lucide="arrow-up-right"></i></a><a href="https://github.com/LikC1606/theorem-os-site" target="_blank" rel="noreferrer">GitHub<i data-lucide="arrow-up-right"></i></a></div></footer>
+  <footer class="feedback-footer"><div class="wrap"><span>© 2026 TheoremOS contributors</span><a href="index.html#start">申请内测<i data-lucide="arrow-up-right"></i></a><a href="privacy.html">隐私与条款</a><a href="https://github.com/LikC1606/theorem-os-site" target="_blank" rel="noreferrer">GitHub<i data-lucide="arrow-up-right"></i></a></div></footer>
 
   <dialog class="feedback-review" id="feedback-review" aria-labelledby="feedback-review-title" aria-describedby="feedback-review-note">
     <div class="feedback-review-heading"><h2 id="feedback-review-title">确认反馈</h2><button class="feedback-icon-button" id="feedback-review-close" type="button" title="返回修改" aria-label="返回修改"><i data-lucide="x"></i></button></div>
     <p id="feedback-review-summary"></p>
     <p id="feedback-review-note"></p>
     <label class="sr-only" for="feedback-markdown">反馈 Markdown 全文</label><textarea id="feedback-markdown" rows="10" readonly spellcheck="false"></textarea>
-    <div class="feedback-review-actions"><div class="feedback-export"><button class="feedback-icon-button" id="feedback-copy" type="button" title="复制反馈全文" aria-label="复制反馈全文"><i data-lucide="copy"></i></button><button class="feedback-icon-button" id="feedback-download" type="button" title="下载 Markdown" aria-label="下载反馈 Markdown"><i data-lucide="download"></i></button></div><a class="button button-dark" id="feedback-github" href="https://github.com/LikC1606/theorem-os-site/issues/new" target="_blank" rel="noreferrer">前往 GitHub 发布<i data-lucide="arrow-up-right"></i></a></div>
+    <div class="feedback-review-actions"><div class="feedback-export"><button class="feedback-icon-button" id="feedback-copy" type="button" title="复制反馈全文" aria-label="复制反馈全文"><i data-lucide="copy"></i></button><button class="feedback-icon-button" id="feedback-download" type="button" title="下载 Markdown" aria-label="下载反馈 Markdown"><i data-lucide="download"></i></button></div><a class="button button-dark" id="feedback-github" data-umami-event="feedback-github" href="https://github.com/LikC1606/theorem-os-site/issues/new" target="_blank" rel="noreferrer">前往 GitHub 发布<i data-lucide="arrow-up-right"></i></a></div>
     <p class="feedback-export-status" id="feedback-export-status" role="status"></p>
   </dialog>
   <script defer src="feedback.js"></script>

@@ -157,6 +157,16 @@ svg.lucide { width: 20px; height: 20px; flex-shrink: 0; stroke-width: 1.6; }
 .status-dot { width: 6px; height: 6px; display: inline-block; border-radius: 50%; background: var(--green); flex-shrink: 0; }
 .preview-divider { margin-inline: 3px; }
 
+/* Who the product is for and what a run costs, before any demo. */
+.audience-section { padding-block: 88px; }
+.audience-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.audience-card { display: flex; flex-direction: column; padding: 32px; background: var(--surface); border-radius: 14px; }
+.audience-card > svg { width: 24px; height: 24px; color: var(--blue); }
+.audience-card h3 { margin-top: 24px; font-size: var(--step-lead); }
+.audience-card p { margin-top: 12px; font-size: 16px; }
+.audience-card code { font-size: .9em; }
+.audience-card .text-link { margin-top: auto; padding-top: 16px; }
+.audience-cost { background: var(--field-cyan); }
 /* A working replay owns its own instrument conventions. */
 .replay-section { padding-block: 48px 80px; background: var(--field-cyan); }
 .section-heading { display: flex; justify-content: space-between; align-items: flex-end; gap: 48px; margin-bottom: 48px; }
@@ -317,6 +327,7 @@ tr.proof-row { border-top: 1px solid var(--surface); }
 .replay-label { display: flex; align-items: center; gap: 10px; margin-top: 22px; font-size: 16px; }
 .start-links { display: flex; align-items: center; flex-wrap: wrap; gap: 24px; margin-top: 32px; }
 .start-copy > .start-note { max-width: 36em; margin-top: 18px; color: var(--tool-muted); font-size: 14px; }
+.start-note a { color: var(--tool-ink); text-decoration: underline; text-underline-offset: 3px; }
 .button-lime { background: var(--field-mint); color: var(--ink); }
 .button-lime:hover { background: var(--bg); }
 .start-terminal { min-width: 0; background: var(--tool-surface); }
@@ -396,6 +407,7 @@ tr.proof-row { border-top: 1px solid var(--surface); }
   .footer-wordmark { font-size: 144px; }
 }
 @media (max-width: 900px) {
+  .audience-grid { grid-template-columns: minmax(0, 1fr); gap: 16px; }
   :root { --margin: 24px; --step-display: 96px; --step-head: 40px; }
   .header-inner { height: 68px; gap: 20px; }
   .desktop-nav { display: none; }
@@ -452,6 +464,9 @@ tr.proof-row { border-top: 1px solid var(--surface); }
   .footer-wordmark { font-size: 104px; }
 }
 @media (max-width: 600px) {
+  .audience-section { padding-block: 56px; }
+  .audience-card { padding: 24px; }
+  .audience-card h3 { margin-top: 16px; }
   :root { --margin: 20px; --step-display: 56px; --step-head: 36px; --step-body: 16px; }
   .header-inner { height: 64px; gap: 12px; }
   .brand { font-size: 20px; }

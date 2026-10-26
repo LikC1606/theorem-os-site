@@ -11,6 +11,9 @@ body:
 
         **这条 Issue 会公开显示。请勿填写 API Key、访问令牌、邮箱、电话等个人信息。**
         **This issue is public. Do not include API keys, access tokens, email addresses, phone numbers or other personal information.**
+
+        不使用 GitHub 或希望私下申请，可发邮件至 liuzhenhao@westlake.edu.cn。
+        To apply privately, email liuzhenhao@westlake.edu.cn.
   - type: dropdown
     id: role
     attributes:

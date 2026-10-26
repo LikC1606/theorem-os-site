@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How TheoremOS handles API keys, research records and early access requests, and the terms for using the online workbench.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="TheoremOS | Privacy and terms">
+  <meta property="og:description" content="API keys exist only in memory during a run. Research records belong to your account and are deleted with it.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://likc1606.github.io/theorem-os-site/assets/social-preview-en.png">
+  <link rel="alternate" hreflang="zh-CN" href="https://likc1606.github.io/theorem-os-site/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://likc1606.github.io/theorem-os-site/en/privacy.html">
+  <link rel="icon" type="image/svg+xml" href="../assets/mark.svg">
+  <link rel="stylesheet" href="../landing.css">
+  <link rel="stylesheet" href="../legal.css">
+  <title>TheoremOS | Privacy and terms</title>
+</head>
+<body class="legal-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner wrap">
+      <a class="brand" href="index.html" aria-label="TheoremOS home"><img src="../assets/mark.svg" alt="" width="31" height="31"><span>Theorem<span class="brand-os">OS</span></span></a>
+      <nav class="legal-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="archive.html">Proof archive</a><a href="feedback.html">Feedback</a><a class="lang-link" href="../privacy.html" hreflang="zh-CN" lang="zh-CN" aria-label="中文版">中文</a></nav>
+    </div>
+  </header>
+
+  <main class="legal-layout wrap" id="main">
+    <aside class="legal-toc" aria-label="On this page"><a href="#privacy">Privacy</a><a href="#workbench-data">Online workbench</a><a href="#retention">Retention and deletion</a><a href="#terms">Terms of use</a><a href="#contact">Contact</a></aside>
+    <article class="legal-content">
+      <h1>Privacy and terms</h1>
+      <p class="legal-updated">Updated 26 October 2026 · Applies to the research preview</p>
+      <ul class="legal-summary" aria-label="Summary">
+        <li>Your API key exists only in memory while a run executes. It is never written to disk, logs or run records.</li>
+        <li>You sign in to the workbench with a code sent to your email. During the preview only allowlisted addresses can sign in. Statements, sources and run records belong to your account and are all deleted when you delete it.</li>
+        <li>The platform is free during the research preview. Model calls are billed by the provider you choose, to your API key.</li>
+        <li>This site uses no cookies and no advertising trackers. GitHub access requests and feedback are public.</li>
+      </ul>
+
+      <section id="privacy" aria-labelledby="privacy-title">
+        <h2 id="privacy-title">Privacy</h2>
+        <h3>This site</h3>
+        <p>The website and proof archive are static pages hosted on GitHub Pages. This site sets no cookies and loads no advertising or cross-site tracking scripts. GitHub processes access logs under <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noreferrer">its privacy statement</a>.</p>
+        
+        <h3>Access requests and feedback</h3>
+        <p>Access requests and feedback sent through GitHub are public issues that anyone can read. Do not include API keys, email addresses or other personal information. Email sent to <a href="mailto:liuzhenhao@westlake.edu.cn">liuzhenhao@westlake.edu.cn</a> is used only to answer your request and coordinate early access. It is not published or shared.</p>
+      </section>
+
+      <section id="workbench-data" aria-labelledby="workbench-title">
+        <h2 id="workbench-title">Online workbench</h2>
+        <p>This section describes how the online workbench handles your data once it opens.</p>
+        <h3>Account and sign-in</h3>
+        <ul>
+          <li>You sign in with a one-time code sent to your email. There is no password. During the preview only approved addresses on the allowlist receive a code.</li>
+          <li>The server stores your email address, an account ID and the creation time. We use the address only for sign-in codes, send it no other mail and share it with no one. Code emails are delivered by the mail provider we use.</li>
+          <li>Before a code is sent you type a picture captcha. The workbench server draws it; no third-party bot check is used.</li>
+          <li>After you sign in, the server sets a session cookie that is sent only over HTTPS and cannot be read by scripts. It keeps you signed in, belongs to the workbench only and is not used for tracking.</li>
+        </ul>
+        <h3>API keys</h3>
+        <ul>
+          <li>Your API key is submitted over HTTPS and passed to the isolated container for that run through a private input channel. It does not appear in container arguments or service logs.</li>
+          <li>Commands run by the agent do not receive the key in their environment. When a run finishes or is cancelled, the service clears the key from memory and deletes the container.</li>
+          <li>If the key appears in model output or an error message, it is replaced with <code>[REDACTED]</code> before anything is saved.</li>
+          <li>The key is used only to call the model provider you select in the workbench. The browser never stores it, so you enter it again for each run.</li>
+        </ul>
+        <h3>Research records</h3>
+        <p>The server stores the statement, task description and model settings you submit, along with the candidate sources, Lean checks, events and usage produced during the run. These records let you review runs and download archives in the workbench.</p>
+        <h3>Model providers</h3>
+        <p>During a run, the statement, sources and Lean feedback are sent as prompts to the model provider you choose. How the provider handles them is governed by its own privacy policy.</p>
+        <h3>Browser storage</h3>
+        <p>Task drafts and panel widths are kept in session storage for the current tab and are cleared when you close it. Module plans you save to the local plan library are kept in your browser's local storage, and you can delete them at any time.</p>
+      </section>
+
+      <section id="retention" aria-labelledby="retention-title">
+        <h2 id="retention-title">Retention and deletion</h2>
+        <ul>
+          <li>Each account keeps up to 20 run records. You can delete finished runs in the workbench at any time.</li>
+          <li>A sign-in expires after 30 days without use. You then sign in again, and your records are kept.</li>
+          <li>You can delete your account from the account menu in the workbench. Its email address, run records, archives, knowledge catalogs and server-side module plans are deleted at once, and running tasks are cancelled.</li>
+          <li>The maintainers look at run records only to investigate faults or abuse. Your statements and proofs are not used for any other purpose, sold or published.</li>
+          <li>Upgrades during the research preview may require clearing data. We will announce this on this site in advance. Download the sources and archives you want to keep.</li>
+        </ul>
+      </section>
+
+      <section id="terms" aria-labelledby="terms-title">
+        <h2 id="terms-title">Terms of use</h2>
+        <h3>Research preview</h3>
+        <p>TheoremOS is a research preview provided as is. The service may be interrupted, rate limited or changed. There is no uptime guarantee and no guarantee that a proof will be found.</p>
+        <h3>Costs</h3>
+        <p>The platform is free during the research preview. Model calls are billed to your API key, so set a spending limit with your provider. Usage from runs that fail, are cancelled or time out is billed by the provider as well.</p>
+        <h3>Your content</h3>
+        <p>The statements and sources you submit, and the proofs produced in your runs, remain yours. They appear in the public archive only if you choose to publish them. Submit only content you have the right to use, and do not submit secrets, personal data or confidential material.</p>
+        <h3>Acceptable use</h3>
+        <p>Do not try to break run isolation, attack the service or other users, or upload malicious code, and do not use the run environment for computation unrelated to mathematical research. Sessions that break these rules may be terminated.</p>
+        <h3>Verification results</h3>
+        <p>Verdicts come from an independent Lean check. Review the sources and check records yourself before relying on a result in a paper, competition or other formal setting.</p>
+        <h3>Changes</h3>
+        <p>This page may be updated as the service opens. Significant changes will be dated here and noted on the home page.</p>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <p>To request deletion of your data or ask about this page, email <a href="mailto:liuzhenhao@westlake.edu.cn?subject=TheoremOS%20privacy">liuzhenhao@westlake.edu.cn</a>.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="legal-footer"><div class="wrap"><span>© 2026 TheoremOS contributors</span><a href="index.html#start">Request access</a><a href="feedback.html">Feedback</a><a href="https://github.com/LikC1606/theorem-os-site" target="_blank" rel="noreferrer">GitHub</a></div></footer>
+  <script defer src="../legal.js"></script>
+</body>
+</html>

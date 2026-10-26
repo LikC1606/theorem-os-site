@@ -189,6 +189,7 @@ h1 span { font-family: var(--serif); font-weight: 400; color: #999483; font-size
 .code-line { display: flex; min-width: max-content; padding-right: 15px; }
 .code-line.is-declaration { background: #f4f3ef; }
 .line-number { display: inline-block; width: 42px; flex: 0 0 42px; padding-right: 10px; text-align: right; user-select: none; color: #bebaad; font-size: 9px; border-right: 1px solid #f2f1ee; margin-right: 10px; background: #f8f7f5; }
+.source-loading { display: flex; align-items: center; min-height: 390px; justify-content: center; border: 1px solid var(--line); background: #faf9f5; color: var(--muted); font-size: 13px; padding: 16px; text-align: center; }
 .source-facts { margin-top: 10px; font: 10px/1.8 var(--mono); color: #8f8872; overflow-wrap: anywhere; }
 .source-facts strong { color: #98917d; font-weight: 500; }
 .evidence-entry { padding: 0 0 18px 17px; border-left: 1px solid #e7e4dd; position: relative; margin-left: 3px; }
