@@ -30,7 +30,7 @@
     <aside class="legal-toc" aria-label="On this page"><a href="#privacy">Privacy</a><a href="#workbench-data">Online workbench</a><a href="#retention">Retention and deletion</a><a href="#terms">Terms of use</a><a href="#contact">Contact</a></aside>
     <article class="legal-content">
       <h1>Privacy and terms</h1>
-      <p class="legal-updated">Updated 26 October 2026 · Applies to the research preview</p>
+      <p class="legal-updated">Updated 27 October 2026 · Applies to the research preview</p>
       <ul class="legal-summary" aria-label="Summary">
         <li>Your API key exists only in memory while a run executes. It is never written to disk, logs or run records.</li>
         <li>You sign in to the workbench with a code sent to your email. During the preview only allowlisted addresses can sign in. Statements, sources and run records belong to your account and are all deleted when you delete it.</li>
@@ -54,6 +54,7 @@
         <ul>
           <li>You sign in with a one-time code sent to your email. There is no password. During the preview only approved addresses on the allowlist receive a code.</li>
           <li>The server stores your email address, an account ID and the creation time. We use the address only for sign-in codes, send it no other mail and share it with no one. Code emails are delivered by the mail provider we use.</li>
+          <li>Your account also records two times: when you first submitted a run and when a run first passed acceptance. During the preview we look only at totals and conversion rates built from these times, to see whether onboarding works. We do not look at individual accounts and do not record your clicks or page views. Both go when you delete your account.</li>
           <li>Before a code is sent you type a picture captcha. The workbench server draws it; no third-party bot check is used.</li>
           <li>After you sign in, the server sets a session cookie that is sent only over HTTPS and cannot be read by scripts. It keeps you signed in, belongs to the workbench only and is not used for tracking.</li>
         </ul>
@@ -69,7 +70,9 @@
         <h3>Model providers</h3>
         <p>During a run, the statement, sources and Lean feedback are sent as prompts to the model provider you choose. How the provider handles them is governed by its own privacy policy.</p>
         <h3>Browser storage</h3>
-        <p>Task drafts and panel widths are kept in session storage for the current tab and are cleared when you close it. Module plans you save to the local plan library are kept in your browser's local storage, and you can delete them at any time.</p>
+        <p>Task drafts, a recovery copy of a replaced draft and panel widths are kept in session storage for the current tab and are cleared when you close it. Local storage holds only your interface language, the desktop notification setting, the run you last viewed (so the workbench reopens where you left off) and module plans you save to the local plan library. None of it contains your API key, and you can clear it in your browser settings.</p>
+        <h3>Feedback from the workbench</h3>
+        <p>"Report a problem" in the workbench opens the feedback page on this site with "Web workbench", your browser, system, window size and interface language filled in, plus the error type after a failed run. It adds no run ID, email address, statement or API key. Opening the page sends nothing; the report is published on GitHub only after you confirm it, and you can edit or remove these details first.</p>
       </section>
 
       <section id="retention" aria-labelledby="retention-title">
