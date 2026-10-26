@@ -11,6 +11,8 @@
   <meta property="og:locale" content="zh_CN">
   <meta property="og:image" content="https://likc1606.github.io/theorem-os-site/assets/social-preview.png">
   <meta name="twitter:card" content="summary_large_image">
+  <link rel="alternate" hreflang="zh-CN" href="https://likc1606.github.io/theorem-os-site/">
+  <link rel="alternate" hreflang="en" href="https://likc1606.github.io/theorem-os-site/en/">
   <link rel="icon" type="image/svg+xml" href="assets/mark.svg">
   <link rel="stylesheet" href="landing.css">
   <title>TheoremOS | 数学 Agent 的研究运行时</title>
@@ -21,9 +23,9 @@
     <div class="header-inner wrap">
       <a class="brand" href="index.html" aria-label="TheoremOS 首页"><img src="assets/mark.svg" alt="" width="31" height="31"><span>Theorem<span class="brand-os">OS</span></span></a>
       <nav class="desktop-nav" aria-label="主导航"><a href="#workbench-preview">工作台</a><a href="#proofs">证明成果</a><a href="#components">研究组件</a><a href="archive.html">证明档案<i data-lucide="arrow-up-right"></i></a><a href="feedback.html">反馈</a></nav>
-      <div class="header-actions"><a class="github-link" href="https://github.com/LikC1606/theorem-os-site" target="_blank" rel="noreferrer" aria-label="在 GitHub 查看 TheoremOS"><i data-lucide="git-fork"></i><span>GitHub</span></a><a class="nav-start" href="#start">即将开放<i data-lucide="arrow-down-right"></i></a><button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false" aria-controls="mobile-nav"><i data-lucide="menu"></i><i data-lucide="x"></i></button></div>
+      <div class="header-actions"><a class="github-link" href="https://github.com/LikC1606/theorem-os-site" target="_blank" rel="noreferrer" aria-label="在 GitHub 查看 TheoremOS"><i data-lucide="git-fork"></i><span>GitHub</span></a><a class="lang-link" href="en/index.html" hreflang="en" lang="en" aria-label="English version">EN</a><a class="nav-start" href="#start">申请内测<i data-lucide="arrow-down-right"></i></a><button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false" aria-controls="mobile-nav"><i data-lucide="menu"></i><i data-lucide="x"></i></button></div>
     </div>
-    <nav class="mobile-nav wrap" id="mobile-nav" aria-label="手机导航" hidden><a href="#workbench-preview">研究工作台<i data-lucide="arrow-down-right"></i></a><a href="#demo">验收回放<i data-lucide="arrow-down-right"></i></a><a href="#proofs">证明成果<i data-lucide="arrow-down-right"></i></a><a href="#components">研究组件<i data-lucide="arrow-down-right"></i></a><a href="archive.html">证明档案<i data-lucide="arrow-up-right"></i></a><a href="feedback.html">反馈与建议<i data-lucide="arrow-up-right"></i></a><a href="https://github.com/LikC1606/theorem-os-site" target="_blank" rel="noreferrer">GitHub<i data-lucide="arrow-up-right"></i></a></nav>
+    <nav class="mobile-nav wrap" id="mobile-nav" aria-label="手机导航" hidden><a href="#start">申请内测<i data-lucide="arrow-down-right"></i></a><a href="#workbench-preview">研究工作台<i data-lucide="arrow-down-right"></i></a><a href="#demo">验收回放<i data-lucide="arrow-down-right"></i></a><a href="#proofs">证明成果<i data-lucide="arrow-down-right"></i></a><a href="#components">研究组件<i data-lucide="arrow-down-right"></i></a><a href="archive.html">证明档案<i data-lucide="arrow-up-right"></i></a><a href="feedback.html">反馈与建议<i data-lucide="arrow-up-right"></i></a><a href="https://github.com/LikC1606/theorem-os-site" target="_blank" rel="noreferrer">GitHub<i data-lucide="arrow-up-right"></i></a></nav>
   </header>
 
   <main id="main">
@@ -31,12 +33,12 @@
       <section class="hero wrap" aria-labelledby="hero-title">
         <div class="hero-copy">
           <h1 id="hero-title"><span class="hero-name">TheoremOS</span></h1>
-          <div class="hero-baseline"><div><p class="hero-category">数学 Agent 的研究运行时。</p><p class="hero-description">连接你的模型，独立验证 Lean 证明。</p></div><div class="hero-actions"><a class="button button-dark" href="#start">在线工作台即将开放<i data-lucide="arrow-right"></i></a><a class="text-link" href="archive.html">查看证明档案<i data-lucide="arrow-up-right"></i></a></div></div>
+          <div class="hero-baseline"><div><p class="hero-category">数学 Agent 的研究运行时。</p><p class="hero-description">连接你的模型，独立验证 Lean 证明。</p></div><div class="hero-actions"><a class="button button-dark" href="#start">申请内测<i data-lucide="arrow-right"></i></a><a class="text-link" href="archive.html">查看证明档案<i data-lucide="arrow-up-right"></i></a></div></div>
         </div>
       </section>
       <figure class="workbench-preview wrap" id="workbench-preview">
         <a class="workbench-image-link" href="assets/workbench-full-desktop.png" aria-label="放大查看工作台截图" title="放大查看截图"><picture class="workbench-picture"><source media="(max-width: 900px)" srcset="assets/workbench-mobile.png" width="390" height="440"><img src="assets/workbench-desktop.png" alt="TheoremOS 研究工作台：左侧研究对话与任务输入，右侧实时 Lean 工作区；当前为未提交的 Mathlib 草稿。" width="1440" height="500" fetchpriority="high"></picture><span class="preview-expand"><i data-lucide="maximize-2"></i></span></a>
-        <figcaption id="workbench-caption"><div class="tablet-workbench-copy"><h3>在对话中探索，<br>在工作区验证。</h3><p>研究对话与 Lean 工作区同步展开。手机和平板可切换视图，查看原题、源码与检查状态。</p></div><span><span class="status-dot"></span>工作台截图<span class="preview-divider">/</span>Mathlib 草稿 · 未提交</span><a href="#start">了解开放计划<i data-lucide="arrow-down-right"></i></a></figcaption>
+        <figcaption id="workbench-caption"><div class="tablet-workbench-copy"><h3>在对话中探索，<br>在工作区验证。</h3><p>研究对话与 Lean 工作区同步展开。手机和平板可切换视图，查看原题、源码与检查状态。</p></div><span><span class="status-dot"></span>工作台截图<span class="preview-divider">/</span>Mathlib 草稿 · 未提交</span><a href="#start">申请内测<i data-lucide="arrow-down-right"></i></a></figcaption>
       </figure>
     </div>
     <section class="replay-section" id="demo" aria-labelledby="demo-title">
@@ -123,7 +125,7 @@
       <div class="records-layout wrap">
         <div class="section-heading"><h2 id="records-title">让研究过程，<br>看得见。</h2><div class="records-introduction"><p>从原题、模型配置到最终档案，每一处画面都来自实际运行的产品。</p><a class="text-link" href="archive.html">打开证明档案<i data-lucide="arrow-up-right"></i></a></div></div>
         <div class="product-gallery">
-          <div class="source-column"><figure class="product-fragment"><a href="assets/workbench-source-detail.png" target="_blank" rel="noreferrer" aria-label="查看完整的 Mathlib 源码截图"><img src="assets/workbench-source-detail.png" alt="真实 Lean 工作区：固定 Mathlib 环境下尚未提交的原题与候选源码，保留 sorry。" width="953" height="540" loading="lazy"></a><figcaption><h3>原题与源码，同步查看。</h3><p>选择 Lean 标准库或固定 Mathlib 环境，在右侧工作区检查候选与诊断。这张截图为未提交草稿。</p></figcaption></figure><div class="record-notes"><div><h3>网页工作台</h3><p>下载 Lean 源码与验收报告。运行历史为临时记录。</p><a class="text-link" href="#start">开放计划<i data-lucide="arrow-down-right"></i></a></div><div><h3>研究记录</h3><p>保存候选、诊断与累计用量，研究过程可以回看与复盘。</p><a class="text-link" href="archive.html">查看证明档案<i data-lucide="arrow-up-right"></i></a></div></div></div>
+          <div class="source-column"><figure class="product-fragment"><a href="assets/workbench-source-detail.png" target="_blank" rel="noreferrer" aria-label="查看完整的 Mathlib 源码截图"><img src="assets/workbench-source-detail.png" alt="真实 Lean 工作区：固定 Mathlib 环境下尚未提交的原题与候选源码，保留 sorry。" width="953" height="540" loading="lazy"></a><figcaption><h3>原题与源码，同步查看。</h3><p>选择 Lean 标准库或固定 Mathlib 环境，在右侧工作区检查候选与诊断。这张截图为未提交草稿。</p></figcaption></figure><div class="record-notes"><div><h3>网页工作台</h3><p>下载 Lean 源码与验收报告。运行历史为临时记录。</p><a class="text-link" href="#start">申请内测<i data-lucide="arrow-down-right"></i></a></div><div><h3>研究记录</h3><p>保存候选、诊断与累计用量，研究过程可以回看与复盘。</p><a class="text-link" href="archive.html">查看证明档案<i data-lucide="arrow-up-right"></i></a></div></div></div>
           <figure class="product-fragment settings-fragment"><a href="assets/workbench-settings-detail.png" target="_blank" rel="noreferrer" aria-label="查看完整的模型配置截图"><img src="assets/workbench-settings-detail.png" alt="新版分区研究配置：模型连接页显示 OpenAI 服务地址、模型、推理强度与空 API Key。" width="370" height="814" loading="lazy"></a><figcaption><h3>连接自己的模型。</h3><p>支持 OpenAI 及兼容 Responses API 的服务。API Key 不写入浏览器存储。</p></figcaption></figure>
         </div>
         <figure class="archive-showcase"><a class="archive-image-link" href="archive.html" aria-label="打开可检索的证明档案"><picture><source media="(max-width: 600px)" srcset="assets/archive-preview-mobile.png" width="356" height="797"><img src="assets/archive-preview.png" alt="TheoremOS 证明档案真实界面，保留题目、原始归属、Lean 源码和验收证据。" width="1440" height="900" loading="lazy"></picture></a><figcaption><span>源码、来源与验收，放在同一份档案。</span><a href="archive.html">检索证明档案<i data-lucide="arrow-up-right"></i></a></figcaption></figure>
@@ -134,9 +136,10 @@
       <div class="start-layout wrap">
         <div class="start-copy">
           <h2 id="start-title">开始你的<br>下一次研究。</h2>
-          <p>在线工作台即将开放。<br>开放后，在浏览器中输入原题与自己的 API Key 即可开始研究。</p>
+          <p>在线工作台即将开放。<br>提交内测申请，开放时我们会在同一条 Issue 里回复你。</p>
           <span class="replay-label"><i data-lucide="clock"></i>在线服务 · 即将开放</span>
-          <div class="start-links"><a class="button button-lime" href="feedback.html">提出需求与建议<i data-lucide="arrow-up-right"></i></a><a class="text-link" href="archive.html">先看证明档案<i data-lucide="arrow-up-right"></i></a></div>
+          <div class="start-links"><a class="button button-lime" href="https://github.com/LikC1606/theorem-os-site/issues/new?template=early-access.yml" target="_blank" rel="noreferrer">用 GitHub 申请内测<i data-lucide="arrow-up-right"></i></a><a class="text-link" href="feedback.html">提出需求与建议<i data-lucide="arrow-up-right"></i></a></div>
+          <p class="start-note">GitHub 申请会公开显示，请勿填写 API Key、邮箱等个人信息。</p>
         </div>
         <div class="start-terminal start-soon" data-ui>
           <div class="terminal-heading"><span>在线工作台</span><i data-lucide="globe"></i></div>
@@ -155,7 +158,7 @@
       </div>
     </section>
 
-    <section class="faq-section wrap" aria-labelledby="faq-title"><h2 id="faq-title">开始之前。</h2><div class="faq-list"><details><summary>适合用来做什么？<i data-lucide="plus"></i></summary><p>面向数学 Agent 研究者和 Lean 开发者，用于构造证明、比较搜索与协作方法，以及复盘研究实验。当前为研究预览版本。</p></details><details><summary>可以直接在网页运行证明吗？<i data-lucide="plus"></i></summary><p>在线工作台即将开放。开放后可以在浏览器中提交 Lean 与 Mathlib 原题、输入自己的 API Key 并查看验收结果。当前站点包含界面截图、预设回放和证明档案。</p></details><details><summary>支持哪类 API Key？<i data-lucide="plus"></i></summary><p>在线工作台支持 OpenAI 及兼容 Responses API 的服务。模型研究会产生服务商对应的用量；站点上的预设回放不调用模型，也不需要 API Key。</p></details><details><summary>网页工作台会保存研究记录吗？<i data-lucide="plus"></i></summary><p>运行记录临时保存在服务内存，可下载源码与报告；服务重启或会话到期后记录清空。网页草稿在当前标签页保存，API Key 不写入浏览器存储。</p></details></div></section>
+    <section class="faq-section wrap" aria-labelledby="faq-title"><h2 id="faq-title">开始之前。</h2><div class="faq-list"><details><summary>怎么申请内测？<i data-lucide="plus"></i></summary><p>在 GitHub 提交内测申请，说明研究用途和想做的题目。开放时我们会在同一条 Issue 里回复你。申请内容会公开显示，请勿填写 API Key、邮箱等个人信息。</p></details><details><summary>适合用来做什么？<i data-lucide="plus"></i></summary><p>面向数学 Agent 研究者和 Lean 开发者，用于构造证明、比较搜索与协作方法，以及复盘研究实验。当前为研究预览版本。</p></details><details><summary>可以直接在网页运行证明吗？<i data-lucide="plus"></i></summary><p>在线工作台即将开放。开放后可以在浏览器中提交 Lean 与 Mathlib 原题、输入自己的 API Key 并查看验收结果。当前站点包含界面截图、预设回放和证明档案。</p></details><details><summary>支持哪类 API Key？<i data-lucide="plus"></i></summary><p>在线工作台支持 OpenAI 及兼容 Responses API 的服务。模型研究会产生服务商对应的用量；站点上的预设回放不调用模型，也不需要 API Key。</p></details><details><summary>网页工作台会保存研究记录吗？<i data-lucide="plus"></i></summary><p>运行记录临时保存在服务内存，可下载源码与报告；服务重启或会话到期后记录清空。网页草稿在当前标签页保存，API Key 不写入浏览器存储。</p></details></div></section>
   </main>
 
   <div class="footer-shell"><footer class="site-footer wrap"><div class="footer-top"><p>让数学探索，有据可循。</p><nav aria-label="页脚链接"><a href="archive.html">证明档案</a><a href="feedback.html">反馈</a><a href="https://github.com/LikC1606/theorem-os-site" target="_blank" rel="noreferrer">GitHub<i data-lucide="arrow-up-right"></i></a></nav></div><div class="footer-wordmark" aria-hidden="true">TheoremOS</div><div class="footer-bottom"><span>© 2026 TheoremOS contributors</span><span>Research Preview</span></div></footer></div>

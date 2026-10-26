@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TheoremOS, a research runtime for math agents. Browse proofs officially accepted by Lean-Eval, their Lean source, verification evidence and research snapshots.">
+  <meta name="theme-color" content="#fafbfc">
+  <meta property="og:title" content="TheoremOS | Lean proof archive">
+  <meta property="og:description" content="From the original proof to official acceptance, with full provenance and evidence.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://likc1606.github.io/theorem-os-site/assets/archive-preview.png">
+  <link rel="alternate" hreflang="zh-CN" href="https://likc1606.github.io/theorem-os-site/archive.html">
+  <link rel="alternate" hreflang="en" href="https://likc1606.github.io/theorem-os-site/en/archive.html">
+  <link rel="icon" type="image/svg+xml" href="../assets/mark.svg">
+  <link rel="stylesheet" href="../site.css">
+  <title>TheoremOS | Lean proof archive</title>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="TheoremOS home">
+      <img class="brand-mark" src="../assets/mark.svg" alt="" width="32" height="32">
+      <span>Theorem<span class="brand-os">OS</span></span>
+      <span class="preview-tag">Research Preview</span>
+    </a>
+    <nav class="header-links" aria-label="Project links">
+      <a href="index.html"><span>Home</span></a>
+      <a href="feedback.html"><span>Feedback</span></a>
+      <a class="lang-link" href="../archive.html" hreflang="zh-CN" lang="zh-CN" aria-label="中文版"><span>中文</span></a>
+      <a href="https://github.com/LikC1606/theorem-os-site" target="_blank" rel="noreferrer"><i data-lucide="git-fork"></i><span>GitHub</span><i class="external-arrow" data-lucide="arrow-up-right"></i></a>
+    </nav>
+  </header>
+
+  <div class="workspace">
+    <aside class="sidebar" aria-label="Workspace navigation">
+      <div class="sidebar-section">Workspace</div>
+      <nav class="workspace-nav" aria-label="Views">
+        <a href="#view=archive" data-view-link="archive" class="nav-item is-active" aria-current="page"><i data-lucide="files"></i><span>Proof archive</span><span id="nav-count" class="nav-count">7</span></a>
+        <a href="#view=quickstart" data-view-link="quickstart" class="nav-item"><i data-lucide="shield-check"></i><span>Replay</span><i data-lucide="chevron-right" class="nav-end"></i></a>
+      </nav>
+      <div class="sidebar-section resources-title">Resources</div>
+      <nav class="resource-nav" aria-label="Resources">
+        <a href="feedback.html"><i data-lucide="message-circle"></i>Feedback<i data-lucide="arrow-up-right" class="nav-end"></i></a>
+        <a href="index.html#start"><i data-lucide="clock"></i>Request access<i data-lucide="arrow-up-right" class="nav-end"></i></a>
+      </nav>
+      <div class="sidebar-bottom">
+        <span class="archive-label"><i data-lucide="git-branch"></i>Proof archive</span>
+        <span>Research Preview</span>
+      </div>
+    </aside>
+
+    <main id="main" tabindex="-1">
+      <section id="archive-view" aria-labelledby="page-title">
+        <div class="page-heading">
+          <div>
+            <p class="breadcrumb">Workspace <i data-lucide="chevron-right"></i> Proof archive</p>
+            <h1 id="page-title">TheoremOS <span>Proof archive</span></h1>
+            <p class="page-description">A research runtime for math agents <span>·</span> Lean proofs, verification records and research snapshots</p>
+          </div>
+          <div class="heading-actions">
+            <button class="button button-primary" data-action="quickstart"><i data-lucide="shield-check"></i>Verification replay</button>
+          </div>
+        </div>
+
+        <div class="metrics" aria-label="Archive statistics">
+          <div class="metric"><div class="metric-label"><i data-lucide="badge-check"></i>Officially accepted</div><div class="metric-value"><strong id="accepted-count">6</strong><span>Lean-Eval accepted</span></div></div>
+          <div class="metric"><div class="metric-label"><i data-lucide="flask-conical"></i>Research snapshots</div><div class="metric-value"><strong id="progress-count">1</strong><span>not yet accepted</span></div></div>
+          <div class="metric"><div class="metric-label"><i data-lucide="file-code-2"></i>Archived source</div><div class="metric-value"><strong id="line-count">&middot;&middot;&middot;</strong><span>lines of Lean</span></div></div>
+          <div class="metric metric-snapshot"><div class="metric-label"><i data-lucide="calendar-days"></i>Snapshot date</div><div class="snapshot-value" id="snapshot-date">2026-10-15</div><span class="muted small">UTC · static archive</span></div>
+        </div>
+
+        <div class="archive-toolbar">
+          <fieldset class="status-filter" aria-label="Filter by verification status">
+            <legend class="sr-only">Verification status</legend>
+            <label><input type="radio" name="status" value="all" checked><span>All <b id="all-filter-count">7</b></span></label>
+            <label><input type="radio" name="status" value="accepted"><span>Accepted <b id="accepted-filter-count">6</b></span></label>
+            <label><input type="radio" name="status" value="progress"><span>In progress <b id="progress-filter-count">1</b></span></label>
+          </fieldset>
+          <div class="search-sort">
+            <label class="search-field"><i data-lucide="search"></i><input id="search" type="search" autocomplete="off" aria-label="Search problems or areas" placeholder="Search problems, areas…"></label>
+            <label class="sort-field"><span class="sr-only">Sort</span><i data-lucide="arrow-down-wide-narrow"></i><select id="sort" aria-label="Sort"><option value="verified">Accepted first</option><option value="recent">Recently updated</option><option value="title">Title</option></select></label>
+          </div>
+        </div>
+
+        <div class="archive-workbench">
+          <section class="catalog" aria-label="Proof records">
+            <div class="catalog-heading"><span>Problem / source</span><span>Status / updated</span></div>
+            <ul id="proof-list" class="proof-list" aria-label="Proof list"><li class="initial-loading" role="status">Loading the proof archive…</li></ul>
+            <div id="empty-state" class="empty-state" hidden><i data-lucide="search-x"></i><h2>No matching problems</h2><button class="button" data-action="reset">Clear filters</button></div>
+            <div class="catalog-footer"><span id="result-count" aria-live="polite">7 records</span><a href="../data/catalog.json" download="theoremos-archive.json" title="Download the full archive as JSON"><i data-lucide="download"></i>Archive JSON</a></div>
+          </section>
+          <aside class="inspector" id="inspector" aria-label="Problem details"></aside>
+        </div>
+        <footer class="archive-footer"><span><i data-lucide="git-commit-horizontal"></i>Archive repository <a id="archive-revision" href="https://github.com/LikC1606/theorem-os-site" target="_blank" rel="noreferrer">theorem-os-site</a></span><span>Each record lists its original project and model attribution</span></footer>
+      </section>
+
+      <section id="quickstart-view" aria-labelledby="quickstart-title" hidden>
+        <div class="page-heading">
+          <div><p class="breadcrumb">Workspace <i data-lucide="chevron-right"></i> Verification replay</p><h1 id="quickstart-title">Verification replay</h1><p class="page-description">A small natural-number addition problem <span>·</span> recorded candidates <span>·</span> no model calls</p></div>
+        </div>
+        <div class="quickstart-layout">
+          <div class="quickstart-commands">
+            <div class="section-title"><h2>What the replay shows</h2><span class="small muted">Recorded example</span></div>
+            <dl class="requirements"><div><dt>Problem</dt><dd>Natural-number addition · Lean standard library</dd></div><div><dt>Candidates</dt><dd>A failing candidate first, then the repaired proof</dd></div><div><dt>Model</dt><dd>No model calls and no API key</dd></div><div><dt>Verification</dt><dd>An independent Lean pipeline checks the full statement</dd></div></dl>
+            <p class="small muted">The replay shows how TheoremOS records candidates, checks and repairs, and how <code>evaluated_passed</code> on the full statement is the verification result. Once the online workbench opens, you can run your own problems in the browser.</p>
+          </div>
+          <div class="replay-evidence">
+            <div class="section-title"><h2>Replay verification record</h2><span class="status-badge accepted"><i data-lucide="circle-check"></i>Independent Lean check</span></div>
+            <figure><img src="../assets/replay.png" alt="The structured result of the TheoremOS recorded replay: final status evaluated_passed, both statement targets kernel_verified, official false." width="1100" height="640" loading="lazy"><figcaption>Real replay record · recorded proof · not a measure of model ability <a href="../assets/replay.json" target="_blank">Raw record fields</a></figcaption></figure>
+            <div class="verification-rule"><i data-lucide="shield-check"></i><div><strong>evaluated_passed</strong><p>The full statement passed independent verification. Official Lean-Eval results are listed in the proof archive.</p></div></div>
+          </div>
+        </div>
+      </section>
+
+      <noscript><p>JavaScript is disabled. <a href="https://github.com/LikC1606/theorem-os-site/tree/main/accepted">Browse the original proof archive</a></p></noscript>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <script src="../site.js" defer></script>
+</body>
+</html>

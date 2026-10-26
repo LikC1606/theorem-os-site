@@ -1,0 +1,51 @@
+name: 申请内测 / Request early access
+description: 申请 TheoremOS 在线工作台内测 / Request access to the TheoremOS online workbench
+title: "[Early access] "
+labels: ["early-access"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        在线工作台开放时，我们会在这条 Issue 里回复你。
+        We will reply in this issue when the online workbench opens.
+
+        **这条 Issue 会公开显示。请勿填写 API Key、访问令牌、邮箱、电话等个人信息。**
+        **This issue is public. Do not include API keys, access tokens, email addresses, phone numbers or other personal information.**
+  - type: dropdown
+    id: role
+    attributes:
+      label: 身份 / Role
+      options:
+        - 数学 Agent 研究者 / Math agent researcher
+        - Lean / Mathlib 开发者 / Lean or Mathlib developer
+        - 数学研究者或学生 / Mathematician or student
+        - 其他 / Other
+    validations:
+      required: true
+  - type: textarea
+    id: use
+    attributes:
+      label: 研究用途 / Research use
+      description: 你想用 TheoremOS 研究什么？/ What would you like to study with TheoremOS?
+    validations:
+      required: true
+  - type: textarea
+    id: problems
+    attributes:
+      label: 想做的题目 / Problems
+      description: 题目名称、来源或 Lean 声明链接（选填）/ Problem names, sources or links to Lean statements (optional)
+  - type: dropdown
+    id: model
+    attributes:
+      label: 计划使用的模型服务 / Model service
+      options:
+        - OpenAI
+        - 兼容 Responses API 的服务 / A service compatible with the Responses API
+        - 还没确定 / Not sure yet
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 确认 / Confirmation
+      options:
+        - label: 我没有填写 API Key 或个人联系方式 / I have not included API keys or personal contact details
+          required: true

@@ -9,6 +9,8 @@
   <meta property="og:description" content="告诉我们遇到的问题，或你希望 TheoremOS 做得更好的地方。">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://likc1606.github.io/theorem-os-site/assets/social-preview.png">
+  <link rel="alternate" hreflang="zh-CN" href="https://likc1606.github.io/theorem-os-site/feedback.html">
+  <link rel="alternate" hreflang="en" href="https://likc1606.github.io/theorem-os-site/en/feedback.html">
   <link rel="icon" type="image/svg+xml" href="assets/mark.svg">
   <link rel="stylesheet" href="landing.css">
   <link rel="stylesheet" href="feedback.css">
@@ -19,7 +21,7 @@
   <header class="site-header">
     <div class="header-inner wrap">
       <a class="brand" href="index.html" aria-label="TheoremOS 首页"><img src="assets/mark.svg" alt="" width="31" height="31"><span>Theorem<span class="brand-os">OS</span></span></a>
-      <nav class="feedback-nav" aria-label="主导航"><a href="index.html">产品首页</a><a href="archive.html">证明档案</a><a href="feedback.html" aria-current="page">反馈</a></nav>
+      <nav class="feedback-nav" aria-label="主导航"><a href="index.html">产品首页</a><a href="archive.html">证明档案</a><a href="feedback.html" aria-current="page">反馈</a><a class="lang-link" href="en/feedback.html" hreflang="en" lang="en" aria-label="English version">EN</a></nav>
     </div>
   </header>
 
@@ -42,16 +44,16 @@
           <label><input type="radio" name="feedback-kind" value="question"><span><i data-lucide="message-circle"></i>使用咨询</span></label>
         </div></fieldset>
 
-        <div class="feedback-field"><label for="feedback-area">相关位置</label><select id="feedback-area" required><option value="" disabled selected>请选择</option><option value="workbench">网页工作台</option><option value="website">官网与证明档案</option><option value="cli">CLI 运行时</option><option value="lean">Lean / Mathlib</option><option value="deployment">文档与部署</option><option value="other">其他</option></select></div>
+        <div class="feedback-field"><label for="feedback-area">相关位置</label><select id="feedback-area" required><option value="" disabled selected>请选择</option><option value="workbench">网页工作台</option><option value="website">官网与证明档案</option><option value="lean">Lean / Mathlib</option><option value="access">内测与账号</option><option value="other">其他</option></select></div>
         <div class="feedback-field"><label for="feedback-subject">反馈标题</label><input id="feedback-subject" type="text" maxlength="100" required placeholder="用一句话概括" autocomplete="off"></div>
         <div class="feedback-field"><label for="feedback-description">详细描述</label><textarea id="feedback-description" rows="7" maxlength="10000" required aria-describedby="feedback-description-hint feedback-count" placeholder="发生了什么？如何复现？你期望的结果是什么？"></textarea><div class="feedback-field-meta"><p id="feedback-description-hint">可附上复现步骤、错误信息与预期结果。</p><span id="feedback-count">0 / 10000</span></div></div>
-        <div class="feedback-field"><label for="feedback-environment">环境与版本 <span>选填</span></label><input id="feedback-environment" type="text" maxlength="240" placeholder="如：Ubuntu · Chrome · Docker" autocomplete="off"></div>
+        <div class="feedback-field"><label for="feedback-environment">环境与版本 <span>选填</span></label><input id="feedback-environment" type="text" maxlength="240" placeholder="如：macOS · Chrome 130" autocomplete="off"></div>
         <div class="feedback-submit-row"><p>先确认内容，再到 GitHub 发布。<br>截图与附件可在 GitHub 补充。</p><button class="button button-dark" id="feedback-preview" type="submit">预览反馈<i data-lucide="arrow-right"></i></button></div>
       </form>
     </section>
   </main>
 
-  <footer class="feedback-footer"><div class="wrap"><span>© 2026 TheoremOS contributors</span><a href="index.html#start">在线工作台 · 即将开放<i data-lucide="arrow-up-right"></i></a><a href="https://github.com/LikC1606/theorem-os-site" target="_blank" rel="noreferrer">GitHub<i data-lucide="arrow-up-right"></i></a></div></footer>
+  <footer class="feedback-footer"><div class="wrap"><span>© 2026 TheoremOS contributors</span><a href="index.html#start">申请内测<i data-lucide="arrow-up-right"></i></a><a href="https://github.com/LikC1606/theorem-os-site" target="_blank" rel="noreferrer">GitHub<i data-lucide="arrow-up-right"></i></a></div></footer>
 
   <dialog class="feedback-review" id="feedback-review" aria-labelledby="feedback-review-title" aria-describedby="feedback-review-note">
     <div class="feedback-review-heading"><h2 id="feedback-review-title">确认反馈</h2><button class="feedback-icon-button" id="feedback-review-close" type="button" title="返回修改" aria-label="返回修改"><i data-lucide="x"></i></button></div>

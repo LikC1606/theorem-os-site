@@ -1,7 +1,7 @@
 {
   "schema": "theoremos.public-archive.v1",
   "repository": "https://github.com/LikC1606/theorem-os-site",
-  "archiveRevision": "863b34acc595c991108461ff7e8f2226ce660913",
+  "archiveRevision": "6a968045cb18cc90d129c4e33d15a5c6c28f69df",
   "snapshotAt": "2026-10-15T18:47:55.278958+00:00",
   "records": [
     {
@@ -11,6 +11,11 @@
       "area": "数论",
       "summary": "证明非零且非单位根代数整数的 house 下界。档案保留最终提交包及官方验收记录。",
       "declaration": "theorem dimitrov",
+      "en": {
+        "subtitle": "A lower bound for the house of algebraic integers",
+        "area": "Number theory",
+        "summary": "Proves the lower bound for the house of an algebraic integer that is nonzero and not a root of unity. The archive keeps the final submission package and its official result."
+      },
       "status": "official_accepted",
       "model": "DeepScientist Math + GPT-6.1 (gpt-6.1-sol)",
       "updatedAt": "2026-10-16T12:04:03Z",
@@ -67,6 +72,11 @@
       "area": "微分几何",
       "summary": "在原题的黎曼流形条件下，证明测地完备与度量完备的等价性。档案保留最终提交包及官方验收记录。",
       "declaration": "theorem hopf_rinow",
+      "en": {
+        "subtitle": "Geodesic and metric completeness",
+        "area": "Riemannian geometry",
+        "summary": "Under the Riemannian manifold hypotheses of the statement, proves that geodesic completeness and metric completeness are equivalent. The archive keeps the final submission package and its official result."
+      },
       "status": "official_accepted",
       "model": "DeepScientist Math + GPT-6.1 (gpt-6.1-sol)",
       "updatedAt": "2026-10-16T12:04:03Z",
@@ -123,6 +133,11 @@
       "area": "组合数学",
       "summary": "正上密度的自然数集合包含任意长等差数列。当前档案记录研究过程，尚未获得官方验收。",
       "declaration": "theorem szemeredi",
+      "en": {
+        "subtitle": "Arithmetic progressions in sets of positive upper density",
+        "area": "Combinatorics",
+        "summary": "A set of natural numbers with positive upper density contains arbitrarily long arithmetic progressions. This archive records the research process; it has no official acceptance yet."
+      },
       "status": "in_progress_not_officially_accepted",
       "model": "gpt-6.1-sol",
       "updatedAt": "2026-10-15T18:47:55.276997+00:00",
@@ -172,6 +187,11 @@
       "area": "概率组合",
       "summary": "证明上闭集合族的分数期望阈值界，包括通用常数 K 和原题 theorem_1_1。档案保留完整提交包及官方验收记录。",
       "declaration": "theorem theorem_1_1",
+      "en": {
+        "subtitle": "Threshold bounds for up-closed families",
+        "area": "Probabilistic combinatorics",
+        "summary": "Proves the fractional expectation threshold bound for up-closed families, including the universal constant K and theorem_1_1. The archive keeps the full submission package and its official result."
+      },
       "status": "official_accepted",
       "model": "DeepScientist Math + GPT-6.1 (gpt-6.1-sol)",
       "updatedAt": "2026-10-15T17:07:13Z",
@@ -227,6 +247,11 @@
       "area": "离散几何",
       "summary": "关于固定夹角下等角线数量与谱半径阶的渐近关系。档案保留原始提交包及其官方验收结果。",
       "declaration": "theorem theorem_1_2",
+      "en": {
+        "subtitle": "Equiangular lines with a fixed angle",
+        "area": "Discrete geometry",
+        "summary": "The asymptotic relation between the number of equiangular lines with a fixed angle and the order of the spectral radius. The archive keeps the original submission package and its official result."
+      },
       "status": "official_accepted",
       "model": "DeepScientist Math + GPT-6.1 (gpt-6.1-sol)",
       "updatedAt": "2026-10-15T06:53:59Z",
@@ -293,6 +318,11 @@
       "area": "泛函分析",
       "summary": "在 1 ≤ p ≤ 2 时，比较 Banach 空间的 Rademacher 型与 Enflo 型常数，同时证明两侧常数界。对应原题 theorem_1_1。",
       "declaration": "theorem theorem_1_1",
+      "en": {
+        "subtitle": "Rademacher type and Enflo type coincide",
+        "area": "Functional analysis",
+        "summary": "For 1 ≤ p ≤ 2, compares the Rademacher type and Enflo type constants of Banach spaces and proves the bounds in both directions. Corresponds to theorem_1_1."
+      },
       "status": "official_accepted",
       "model": "DeepScientist Math + GPT-6.1 (gpt-6.1-sol)",
       "updatedAt": "2026-10-14T05:07:39Z",
@@ -355,6 +385,11 @@
       "area": "代数",
       "summary": "构造无挠群中的群环非平凡单位，对应原题 theorem_A。原始结果归属于 DeepScientist + GPT-5.6。",
       "declaration": "theorem theorem_A",
+      "en": {
+        "subtitle": "A nontrivial unit in a group ring",
+        "area": "Algebra",
+        "summary": "Constructs a nontrivial unit in the group ring of a torsion-free group, theorem_A of the statement. The original result is credited to DeepScientist + GPT-5.6."
+      },
       "status": "official_accepted",
       "model": "DeepScientist + GPT-5.6",
       "updatedAt": "2026-08-22T14:44:59Z",
