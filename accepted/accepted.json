@@ -1,0 +1,124 @@
+[
+  {
+    "problem_id": "annals_unit_conjecture",
+    "statement_revision": 1,
+    "directory": "annals_unit_conjecture",
+    "model": "DeepScientist + GPT-5.6",
+    "status": "official_accepted",
+    "submission_url": "https://github.com/leanprover/lean-eval-submissions/issues/1246",
+    "result_url": "https://github.com/leanprover/lean-eval-submissions/issues/1246#issuecomment-5380977645",
+    "result_reported_at": "2026-08-22T14:44:59Z",
+    "result_body": "## Submission result\n\n✅ Newly-solved problems: annals_unit_conjecture\n\nAttempted 1 / 1; succeeded on 1.\n\n### Per-problem\n- `annals_unit_conjecture`: pass",
+    "original_source_url": "https://gist.github.com/LikC1606/7570e284ff8b474a4139db2092de6eec/1062b1e6c3d5bda6ae4a218e41bd34dbf11a2c35",
+    "original_source_commit": "1062b1e6c3d5bda6ae4a218e41bd34dbf11a2c35",
+    "source_sha256": {
+      "Submission.lean": "5b0740de41cc47385273cb26195b3c7f08e50fa349edfa36489731b6ba10f062",
+      "lakefile.toml": "27369d856ec9815ed11b8aac39b1ae99b080c41da610edc559a6490c23c5f9b1"
+    }
+  },
+  {
+    "problem_id": "annals_rademacher_enflo_type",
+    "statement_revision": 1,
+    "directory": "annals_rademacher_enflo_type",
+    "model": "DeepScientist Math + GPT-6.1 (gpt-6.1-sol)",
+    "status": "official_accepted",
+    "submission_url": "https://github.com/leanprover/lean-eval-submissions/issues/2115",
+    "result_url": "https://github.com/leanprover/lean-eval-submissions/issues/2115#issuecomment-6161355838",
+    "result_reported_at": "2026-10-14T05:07:39Z",
+    "result_body": "## Submission result\n\n✅ Newly-solved problems: annals_rademacher_enflo_type\n\nAttempted 1 / 1; succeeded on 1.\n\n### Per-problem\n- `annals_rademacher_enflo_type`: pass",
+    "original_source_url": "https://github.com/LikC1606/deepscientist-math-proofs/tree/0c40463f2714beea03c5e8416ba9e7c62aa6aa50",
+    "original_source_commit": "0c40463f2714beea03c5e8416ba9e7c62aa6aa50",
+    "source_sha256": {
+      "README.md": "7d742c9565136e3a1558aaba102f54c889aa6102d7c94d36b52535a02797dd3c",
+      "Submission.lean": "ad93f9761455b4e52fba817c002cb8a662296d99444ff27ec05d632ba7872357",
+      "Submission/Helpers.lean": "b5b5c31e59632f5c10241037df5e8d8d3f4ba346d99917caffd60932c7dae226",
+      "lakefile.toml": "42cca2d8df61e708f738befd9546f5f9d1f7d20660aadbf88372bbaf38b1ac4e",
+      "verification.json": "9c28ee8f06c5acda0e23131693ce25b865f0d9b11f1e437503c29b19a34296a0"
+    }
+  },
+  {
+    "problem_id": "annals_equiangular_lines_fixed_angle",
+    "statement_revision": 1,
+    "directory": "annals_equiangular_lines_fixed_angle",
+    "model": "DeepScientist Math + GPT-6.1 (gpt-6.1-sol)",
+    "status": "official_accepted",
+    "submission_url": "https://github.com/leanprover/lean-eval-submissions/issues/2135",
+    "result_url": "https://github.com/leanprover/lean-eval-submissions/issues/2135#issuecomment-6186332699",
+    "result_reported_at": "2026-10-15T06:53:59Z",
+    "result_body": "## Submission result\n\n✅ Newly-solved problems: annals_equiangular_lines_fixed_angle\n\nAttempted 1 / 1; succeeded on 1.\n\n### Per-problem\n- `annals_equiangular_lines_fixed_angle`: pass",
+    "original_source_url": "https://github.com/LikC1606/deepscientist-math-proofs/tree/1a46c11651e8346a13af410ae3e12292da694d81",
+    "original_source_commit": "1a46c11651e8346a13af410ae3e12292da694d81",
+    "source_sha256": {
+      "README.md": "01a11641e2a5f0f18f15bdd1e7fcb6501ead04b93a5cdcb02fe09a63d96cedc1",
+      "Submission.lean": "33bb5ef9ab4ba497af6218874580c54791358516812cd52b187e2091946903f1",
+      "Submission/Helpers.lean": "2b0ee3d08d6293710ee2348a00f8bd72e702332e7e05af0af61a434c6476e57f",
+      "compatibility-verification.json": "52bc09f6f7f67925d6c1daad37001d89cf3dc1a317da2bf33e64d47e8926f948",
+      "lakefile.toml": "830b8ff82d0016b22f868cc9a9b9b3301bb01d710212926188ee6558c2560468",
+      "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+      "verification.json": "b2c9c38d29712f16603aea5a2bee87be26fae1b6124fe5abf6ce98c138b0b04a"
+    }
+  },
+  {
+    "problem_id": "annals_fractional_expectation_thresholds",
+    "statement_revision": 1,
+    "directory": "annals_fractional_expectation_thresholds",
+    "model": "DeepScientist Math + GPT-6.1 (gpt-6.1-sol)",
+    "status": "official_accepted",
+    "submission_url": "https://github.com/leanprover/lean-eval-submissions/issues/2141",
+    "result_url": "https://github.com/leanprover/lean-eval-submissions/issues/2141#issuecomment-6197783762",
+    "result_reported_at": "2026-10-15T17:07:13Z",
+    "result_body": "## Submission result\n\n✅ Newly-solved problems: annals_fractional_expectation_thresholds\n\nAttempted 1 / 1; succeeded on 1.\n\n### Per-problem\n- `annals_fractional_expectation_thresholds`: pass",
+    "original_source_url": "https://github.com/LikC1606/deepscientist-math-proofs/tree/003d58b9a333858bf878e5984348ee21bb0aed72",
+    "original_source_commit": "003d58b9a333858bf878e5984348ee21bb0aed72",
+    "source_sha256": {
+      "README.md": "48b033edf91816eea3ae2f1c09d23e300393113c7390971a3879d4a8b1835d39",
+      "Submission.lean": "028ce084c75d9015852e6912d05ebf50f40d05522b47267e52c3365c7f19d56e",
+      "Submission/Helpers.lean": "e0ea3f43432ed60c497193a8bb900ca71bdbb4a16e0c256a6d1bac0b4f273fad",
+      "lakefile.toml": "0331a667b991e555c474fbd05905e89f1402f826b70d851319e6ab60edea3c4a",
+      "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+      "verification.json": "e313a7e004a8b48c41397c209e061481fa1d6468ef2da47532ec7787b66d2c90"
+    }
+  },
+  {
+    "problem_id": "dimitrov",
+    "statement_revision": 1,
+    "directory": "dimitrov",
+    "model": "DeepScientist Math + GPT-6.1 (gpt-6.1-sol)",
+    "status": "official_accepted",
+    "submission_url": "https://github.com/leanprover/lean-eval-submissions/issues/2143",
+    "result_url": "https://github.com/leanprover/lean-eval-submissions/issues/2143#issuecomment-6215093969",
+    "result_reported_at": "2026-10-16T12:04:03Z",
+    "result_body": "## Submission result\n\n✅ Newly-solved problems: dimitrov, hopf_rinow\n\nAttempted 2 / 2; succeeded on 2.\n\n### Per-problem\n- `dimitrov`: pass\n- `hopf_rinow`: pass",
+    "original_source_url": "https://github.com/LikC1606/deepscientist-math-proofs/tree/b6909c3211863eac52c040c8812da3df4ce3af4d",
+    "original_source_commit": "b6909c3211863eac52c040c8812da3df4ce3af4d",
+    "source_sha256": {
+      "Submission.lean": "f00a658ba195e41c8b9f340cb6c21cbbfeb9e4cb68c0c0e85c1d8b3bdb25fe5d",
+      "Submission/Helpers.lean": "4958987925b01fbfba67842ea4aa79e1452f1614e1c4ed82cba7bbc933affefd",
+      "lake-manifest.json": "9aecfc7243ab33486842d04b39d0233997e62a1600dc049fde1552427dd605d1",
+      "lakefile.toml": "46811a9ccc8462fd95c6182cd1480dc22d7b3375d0b23745bb631ede855a0492",
+      "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+      "verification.json": "a1474a7a082fb842d9651358ca49c68ff26e2e31f361d688ff7a6ec611e303a5"
+    }
+  },
+  {
+    "problem_id": "hopf_rinow",
+    "statement_revision": 1,
+    "directory": "hopf_rinow",
+    "model": "DeepScientist Math + GPT-6.1 (gpt-6.1-sol)",
+    "status": "official_accepted",
+    "submission_url": "https://github.com/leanprover/lean-eval-submissions/issues/2143",
+    "result_url": "https://github.com/leanprover/lean-eval-submissions/issues/2143#issuecomment-6215093969",
+    "result_reported_at": "2026-10-16T12:04:03Z",
+    "result_body": "## Submission result\n\n✅ Newly-solved problems: dimitrov, hopf_rinow\n\nAttempted 2 / 2; succeeded on 2.\n\n### Per-problem\n- `dimitrov`: pass\n- `hopf_rinow`: pass",
+    "original_source_url": "https://github.com/LikC1606/deepscientist-math-proofs/tree/b6909c3211863eac52c040c8812da3df4ce3af4d",
+    "original_source_commit": "b6909c3211863eac52c040c8812da3df4ce3af4d",
+    "source_sha256": {
+      "Submission.lean": "168812f88c0fa82777a53cb700e391f6deab564ad2b210900c7573e72d0c365a",
+      "Submission/Helpers.lean": "f62e16b14fff319f20788b03d94cf9de1262dcfa0cc6462b539faa5435573c40",
+      "lake-manifest.json": "c2ffad9c26904466069938f1f6c908f6a3202256c234a0328436724b4666f262",
+      "lakefile.toml": "f8d06e68d8482247f0d18cad71c175fdcb03ca1a68a30a055bca2bde8485bdb2",
+      "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+      "verification.json": "643a4d170f18ff873081d03b9547471f33961e7caaa6423b614d30babea14649"
+    }
+  }
+]
