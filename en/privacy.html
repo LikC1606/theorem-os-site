@@ -33,7 +33,7 @@
       <p class="legal-updated">Updated 27 October 2026 · Applies to the research preview</p>
       <ul class="legal-summary" aria-label="Summary">
         <li>Your API key exists only in memory while a run executes. It is never written to disk, logs or run records.</li>
-        <li>You sign in to the workbench with a code sent to your email. During the preview only allowlisted addresses can sign in. Statements, sources and run records belong to your account and are all deleted when you delete it.</li>
+        <li>You sign in to the workbench (<a href="https://app.theoremos.top/">app.theoremos.top</a>) with a code sent to your email. During the preview only allowlisted addresses can sign in. Statements, sources and run records belong to your account and are all deleted when you delete it. Admins cannot see your statements, proofs or run records.</li>
         <li>The platform is free during the research preview. Model calls are billed by the provider you choose, to your API key.</li>
         <li>This site uses no cookies and no advertising trackers. GitHub access requests and feedback are public.</li>
       </ul>
@@ -41,7 +41,7 @@
       <section id="privacy" aria-labelledby="privacy-title">
         <h2 id="privacy-title">Privacy</h2>
         <h3>This site</h3>
-        <p>The website and proof archive are static pages hosted on GitHub Pages. This site sets no cookies and loads no advertising or cross-site tracking scripts. GitHub processes access logs under <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noreferrer">its privacy statement</a>.</p>
+        <p>The website and proof archive are static pages hosted on Cloudflare; their source files are public on GitHub. This site sets no cookies and loads no advertising or cross-site tracking scripts. Cloudflare processes access logs under <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noreferrer">its privacy policy</a>.</p>
         
         <h3>Access requests and feedback</h3>
         <p>Access requests and feedback sent through GitHub are public issues that anyone can read. Do not include API keys, email addresses or other personal information. Email sent to <a href="mailto:liuzhenhao@westlake.edu.cn">liuzhenhao@westlake.edu.cn</a> is used only to answer your request and coordinate early access. It is not published or shared.</p>
@@ -49,28 +49,40 @@
 
       <section id="workbench-data" aria-labelledby="workbench-title">
         <h2 id="workbench-title">Online workbench</h2>
-        <p>This section describes how the online workbench handles your data once it opens.</p>
+        <p>The online workbench is at <a href="https://app.theoremos.top/">app.theoremos.top</a>. This section describes how it handles your data.</p>
         <h3>Account and sign-in</h3>
         <ul>
           <li>You sign in with a one-time code sent to your email. There is no password. During the preview only approved addresses on the allowlist receive a code.</li>
-          <li>The server stores your email address, an account ID and the creation time. We use the address only for sign-in codes, send it no other mail and share it with no one. Code emails are delivered by the mail provider we use.</li>
-          <li>Your account also records two times: when you first submitted a run and when a run first passed acceptance. During the preview we look only at totals and conversion rates built from these times, to see whether onboarding works. We do not look at individual accounts and do not record your clicks or page views. Both go when you delete your account.</li>
+          <li>The server stores your email address, an account ID and the creation time (your first sign-in). We use the address only for sign-in codes and the research-end emails described below, send it no other mail and share it with no one. Mail is delivered by Alibaba Cloud DirectMail from login@mail.theoremos.top.</li>
+          <li>Your account also records two times: when you first submitted a run and when a run first passed acceptance. During the preview we use these times to see whether onboarding works, mostly as totals and conversion rates. We do not record your clicks or page views. Both go when you delete your account.</li>
           <li>Before a code is sent you type a picture captcha. The workbench server draws it; no third-party bot check is used.</li>
           <li>After you sign in, the server sets a session cookie that is sent only over HTTPS and cannot be read by scripts. It keeps you signed in, belongs to the workbench only and is not used for tracking.</li>
         </ul>
+        <h3>What admins can see</h3>
+        <ul>
+          <li>The workbench admin page lists only: the addresses on the allowlist and where each came from, each account's email address with the times of its first sign-in, first submitted run and first accepted run, and totals built from these times.</li>
+          <li>The admin page neither shows nor offers any way to read an account's statements, sources, proofs, run records or API keys. When maintainers look at run records on the server is described under <a href="#retention">Retention and deletion</a>.</li>
+        </ul>
+        <h3>Research-end emails</h3>
+        <ul>
+          <li>When a run ends on its own (finished or failed), the workbench emails your sign-in address with the run title, the outcome, the time taken and a link back to the run. The email contains no statement, source, proof or API key. Runs you stop yourself send nothing.</li>
+          <li>This is on by default. Turn off "Email me when research ends" in the account menu to stop it.</li>
+        </ul>
+        <h3>Network and hosting</h3>
+        <p>The workbench server is reached through a Cloudflare Tunnel: every request goes over HTTPS to Cloudflare first and is then forwarded to our server. Cloudflare handles this traffic under <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noreferrer">its privacy policy</a>. To limit code requests, the server counts requests per visitor IP in memory and never writes these counts to disk.</p>
         <h3>API keys</h3>
         <ul>
           <li>Your API key is submitted over HTTPS and passed to the isolated container for that run through a private input channel. It does not appear in container arguments or service logs.</li>
           <li>Commands run by the agent do not receive the key in their environment. When a run finishes or is cancelled, the service clears the key from memory and deletes the container.</li>
           <li>If the key appears in model output or an error message, it is replaced with <code>[REDACTED]</code> before anything is saved.</li>
-          <li>The key is used only to call the model provider you select in the workbench. The browser never stores it, so you enter it again for each run.</li>
+          <li>The key is used only to call the model provider you select in the workbench. By default the browser does not keep it, so you enter it again for each run. If you tick "Remember in this tab", the key is kept in session storage for the current tab, is cleared when you close the tab and is offered only for the same provider and address.</li>
         </ul>
         <h3>Research records</h3>
         <p>The server stores the statement, task description and model settings you submit, along with the candidate sources, Lean checks, events and usage produced during the run. These records let you review runs and download archives in the workbench.</p>
         <h3>Model providers</h3>
         <p>During a run, the statement, sources and Lean feedback are sent as prompts to the model provider you choose. How the provider handles them is governed by its own privacy policy.</p>
         <h3>Browser storage</h3>
-        <p>Task drafts, a recovery copy of a replaced draft and panel widths are kept in session storage for the current tab and are cleared when you close it. Local storage holds only your interface language, the desktop notification setting, the run you last viewed (so the workbench reopens where you left off) and module plans you save to the local plan library. None of it contains your API key, and you can clear it in your browser settings.</p>
+        <p>Task drafts, a recovery copy of a replaced draft and panel widths are kept in session storage for the current tab and are cleared when you close it. Local storage holds only your interface language, your appearance choice (light or dark), the desktop notification setting, the run you last viewed (so the workbench reopens where you left off) and module plans you save to the local plan library. None of it contains your API key, and you can clear it in your browser settings.</p>
         <h3>Feedback from the workbench</h3>
         <p>"Report a problem" in the workbench opens the feedback page on this site with "Web workbench", your browser, system, window size and interface language filled in, plus the error type after a failed run. It adds no run ID, email address, statement or API key. Opening the page sends nothing; the report is published on GitHub only after you confirm it, and you can edit or remove these details first.</p>
       </section>

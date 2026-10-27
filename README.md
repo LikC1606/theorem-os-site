@@ -10,7 +10,7 @@
 - 证明档案：https://theoremos.top/archive.html
 - 反馈与建议：https://theoremos.top/feedback.html，或直接[提交 Issue](https://github.com/LikC1606/theorem-os-site/issues/new)
 
-**在线工作台即将开放。** 开放后，可以在浏览器中提交原题、使用自己的 API Key（OpenAI 及兼容 Responses API 的服务）开始研究，并下载 Lean 源码与验收报告。[申请内测](https://github.com/LikC1606/theorem-os-site/issues/new?template=early-access.yml)，开放时我们会在同一条 Issue 里回复你。申请会公开显示，请勿填写 API Key、邮箱等个人信息；希望私下申请可发邮件至 liuzhenhao@westlake.edu.cn。
+**在线工作台已开放内测**：[app.theoremos.top](https://app.theoremos.top/)。可以在浏览器中提交原题、使用自己的 API Key（OpenAI 及兼容 Responses API 的服务）开始研究，并下载 Lean 源码与验收报告。登录需要白名单邮箱：[申请内测](https://github.com/LikC1606/theorem-os-site/issues/new?template=early-access.yml)后，我们会在同一条 Issue 里回复你。申请会公开显示，请勿填写 API Key、邮箱等个人信息；希望私下申请可发邮件至 liuzhenhao@westlake.edu.cn。
 
 ### 仓库内容
 
@@ -41,7 +41,7 @@ A research runtime for math agents. Connect your model, build Lean and Mathlib p
 - Proof archive: https://theoremos.top/en/archive.html
 - Feedback: https://theoremos.top/en/feedback.html, or [open an issue](https://github.com/LikC1606/theorem-os-site/issues/new)
 
-**The online workbench is coming soon.** Once it opens, you can submit statements in the browser, research with your own API key (OpenAI or a service compatible with the Responses API), and download the Lean source and verification report. [Request early access](https://github.com/LikC1606/theorem-os-site/issues/new?template=early-access.yml) and we will reply in the same issue when it opens. Requests are public, so do not include API keys, email addresses or other personal information. To apply privately, email liuzhenhao@westlake.edu.cn.
+**The online workbench is open in beta** at [app.theoremos.top](https://app.theoremos.top/). You can submit statements in the browser, research with your own API key (OpenAI or a service compatible with the Responses API), and download the Lean source and verification report. Sign-in needs an address on the allowlist: [request early access](https://github.com/LikC1606/theorem-os-site/issues/new?template=early-access.yml) and we will reply in the same issue. Requests are public, so do not include API keys, email addresses or other personal information. To apply privately, email liuzhenhao@westlake.edu.cn.
 
 This repository holds the TheoremOS website and public research results. It does not contain the TheoremOS runtime source. `accepted/` holds proof packages with an official Lean-Eval pass, `submitted/` the package that passed 4/4 in [Lean-Eval #2144](https://github.com/leanprover/lean-eval-submissions/issues/2144), `in-progress/` research snapshot sources that are not officially accepted, and `data/catalog.json` the full archive data. Files in the proof packages are kept byte for byte as submitted. The linked Lean-Eval replies are the authoritative acceptance record.
 
