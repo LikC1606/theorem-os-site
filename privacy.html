@@ -6,7 +6,7 @@
   <meta name="description" content="TheoremOS 如何处理 API Key、研究记录与内测申请，以及使用在线工作台的条款。">
   <meta name="theme-color" content="#ffffff">
   <meta property="og:title" content="TheoremOS | 隐私与条款">
-  <meta property="og:description" content="API Key 只在运行期间存在于内存。研究记录归属你的账号，删除账号时一并删除。">
+  <meta property="og:description" content="API Key 不写入日志和运行记录；你选择保存时加密存放，只有你的账号能用。研究记录归属你的账号，删除账号时一并删除。">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://theoremos.top/assets/social-preview.png">
   <link rel="alternate" hreflang="zh-CN" href="https://theoremos.top/privacy.html">
@@ -31,7 +31,7 @@
       <h1>隐私与条款</h1>
       <p class="legal-updated">更新于 2026 年 10 月 27 日 · 适用于研究预览阶段</p>
       <ul class="legal-summary" aria-label="要点">
-        <li>API Key 只在运行期间存在于内存，不写入磁盘、日志或运行记录。</li>
+        <li>API Key 不写入日志或运行记录。你选择「保存到我的账号」时，Key 加密保存在服务器上，只有你的账号能用；不保存时，Key 只在运行期间存在于内存。</li>
         <li>工作台（<a href="https://app.theoremos.top/">app.theoremos.top</a>）用邮箱验证码登录，内测期间仅限白名单邮箱。原题、源码和运行记录归属你的账号，删除账号时全部删除。管理员看不到你的原题、证明和运行记录。</li>
         <li>研究预览期间平台不收费。模型调用按你所选服务商的价格计费，费用由你的 API Key 承担。</li>
         <li>本站不使用 Cookie 或广告追踪。GitHub 内测申请和反馈会公开显示。</li>
@@ -74,7 +74,8 @@
           <li>API Key 通过 HTTPS 提交，经私有输入通道传入本次运行的隔离容器，不出现在容器启动参数或服务日志中。</li>
           <li>Agent 执行命令时，环境变量中不含 API Key。运行结束或取消时，服务清除内存中的 Key，并删除容器。</li>
           <li>如果模型输出或错误信息中出现了 Key，保存前会替换为 <code>[REDACTED]</code>。</li>
-          <li>Key 只用于调用你在工作台中选择的模型服务。默认不保存在浏览器里，每次运行需要重新输入；勾选「在此标签页记住」后，Key 保存在当前标签页的会话存储中，关闭标签页即清除，也只用于同一服务商和地址。</li>
+          <li>Key 只用于调用你在工作台中选择的模型服务。「模型连接」里的「保存到我的账号」默认勾选：Key 用 AES-256-GCM 加密后存在服务器上，加密密钥与数据分开存放；密文绑定你的账号和所选服务商地址，其他账号读不到也用不了。浏览器只拿到 Key 的末四位，不在浏览器存储中保留 Key。</li>
+          <li>取消勾选后提交，Key 不会保存。已保存的 Key 可以在「模型连接」里随时删除，删除账号时也会一并删除。</li>
         </ul>
         <h3>研究记录</h3>
         <p>服务器保存你提交的原题、任务说明和模型配置，以及运行中产生的候选源码、Lean 检查结果、事件和用量。这些记录用于在工作台中回看运行和下载档案。</p>
@@ -91,7 +92,7 @@
         <ul>
           <li>每个账号最多保存 20 条运行记录。已结束的运行可以在工作台中随时删除。</li>
           <li>登录 30 天未使用即过期，需要重新登录，记录保留。</li>
-          <li>在工作台的账号菜单中可以删除账号。删除后，账号的邮箱、运行记录、档案、知识目录和服务器上的模块方案立即全部删除，运行中的任务会被取消。</li>
+          <li>在工作台的账号菜单中可以删除账号。删除后，账号的邮箱、运行记录、档案、知识目录、服务器上的模块方案和保存的 API Key 立即全部删除，运行中的任务会被取消。</li>
           <li>维护者只在排查故障或处理滥用时查看运行记录，不会把你的原题或证明用于其他目的，也不会出售或公开。</li>
           <li>研究预览期间，服务升级可能需要清空数据，届时会提前在本站说明。请及时下载需要保留的源码和档案。</li>
         </ul>

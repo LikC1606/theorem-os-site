@@ -6,7 +6,7 @@
   <meta name="description" content="How TheoremOS handles API keys, research records and early access requests, and the terms for using the online workbench.">
   <meta name="theme-color" content="#ffffff">
   <meta property="og:title" content="TheoremOS | Privacy and terms">
-  <meta property="og:description" content="API keys exist only in memory during a run. Research records belong to your account and are deleted with it.">
+  <meta property="og:description" content="API keys never go into logs or run records; if you choose to save one, it is stored encrypted and only your account can use it. Research records belong to your account and are deleted with it.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
   <meta property="og:image" content="https://theoremos.top/assets/social-preview-en.png">
@@ -32,7 +32,7 @@
       <h1>Privacy and terms</h1>
       <p class="legal-updated">Updated 27 October 2026 · Applies to the research preview</p>
       <ul class="legal-summary" aria-label="Summary">
-        <li>Your API key exists only in memory while a run executes. It is never written to disk, logs or run records.</li>
+        <li>Your API key is never written to logs or run records. If you choose "Save to my account", it is stored encrypted on the server and only your account can use it; otherwise it exists only in memory while a run executes.</li>
         <li>You sign in to the workbench (<a href="https://app.theoremos.top/">app.theoremos.top</a>) with a code sent to your email. During the preview only allowlisted addresses can sign in. Statements, sources and run records belong to your account and are all deleted when you delete it. Admins cannot see your statements, proofs or run records.</li>
         <li>The platform is free during the research preview. Model calls are billed by the provider you choose, to your API key.</li>
         <li>This site uses no cookies and no advertising trackers. GitHub access requests and feedback are public.</li>
@@ -75,7 +75,8 @@
           <li>Your API key is submitted over HTTPS and passed to the isolated container for that run through a private input channel. It does not appear in container arguments or service logs.</li>
           <li>Commands run by the agent do not receive the key in their environment. When a run finishes or is cancelled, the service clears the key from memory and deletes the container.</li>
           <li>If the key appears in model output or an error message, it is replaced with <code>[REDACTED]</code> before anything is saved.</li>
-          <li>The key is used only to call the model provider you select in the workbench. By default the browser does not keep it, so you enter it again for each run. If you tick "Remember in this tab", the key is kept in session storage for the current tab, is cleared when you close the tab and is offered only for the same provider and address.</li>
+          <li>The key is used only to call the model provider you select in the workbench. "Save to my account" under Model connection is ticked by default: the key is encrypted with AES-256-GCM and stored on the server, with the encryption key kept apart from the data. The ciphertext is bound to your account and the chosen provider address, so no other account can read or use it. The browser receives only the last four characters and keeps no key in browser storage.</li>
+          <li>Untick the box before submitting and the key is not saved. You can delete a saved key under Model connection at any time, and it is deleted with your account.</li>
         </ul>
         <h3>Research records</h3>
         <p>The server stores the statement, task description and model settings you submit, along with the candidate sources, Lean checks, events and usage produced during the run. These records let you review runs and download archives in the workbench.</p>
@@ -92,7 +93,7 @@
         <ul>
           <li>Each account keeps up to 20 run records. You can delete finished runs in the workbench at any time.</li>
           <li>A sign-in expires after 30 days without use. You then sign in again, and your records are kept.</li>
-          <li>You can delete your account from the account menu in the workbench. Its email address, run records, archives, knowledge catalogs and server-side module plans are deleted at once, and running tasks are cancelled.</li>
+          <li>You can delete your account from the account menu in the workbench. Its email address, run records, archives, knowledge catalogs, server-side module plans and saved API keys are deleted at once, and running tasks are cancelled.</li>
           <li>The maintainers look at run records only to investigate faults or abuse. Your statements and proofs are not used for any other purpose, sold or published.</li>
           <li>Upgrades during the research preview may require clearing data. We will announce this on this site in advance. Download the sources and archives you want to keep.</li>
         </ul>
