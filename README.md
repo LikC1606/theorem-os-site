@@ -6,9 +6,9 @@
 
 数学 Agent 的研究运行时。连接你的模型，构造 Lean 与 Mathlib 证明，由独立 Lean 流程验收完整原题。
 
-- 官网：https://likc1606.github.io/theorem-os-site/
-- 证明档案：https://likc1606.github.io/theorem-os-site/archive.html
-- 反馈与建议：https://likc1606.github.io/theorem-os-site/feedback.html，或直接[提交 Issue](https://github.com/LikC1606/theorem-os-site/issues/new)
+- 官网：https://theorem-os.lzh-cf-9x27.workers.dev/
+- 证明档案：https://theorem-os.lzh-cf-9x27.workers.dev/archive.html
+- 反馈与建议：https://theorem-os.lzh-cf-9x27.workers.dev/feedback.html，或直接[提交 Issue](https://github.com/LikC1606/theorem-os-site/issues/new)
 
 **在线工作台即将开放。** 开放后，可以在浏览器中提交原题、使用自己的 API Key（OpenAI 及兼容 Responses API 的服务）开始研究，并下载 Lean 源码与验收报告。[申请内测](https://github.com/LikC1606/theorem-os-site/issues/new?template=early-access.yml)，开放时我们会在同一条 Issue 里回复你。申请会公开显示，请勿填写 API Key、邮箱等个人信息；希望私下申请可发邮件至 liuzhenhao@westlake.edu.cn。
 
@@ -37,9 +37,9 @@ TheoremOS 为闭源软件，保留所有权利。本仓库中的字体、图标�
 
 A research runtime for math agents. Connect your model, build Lean and Mathlib proofs, and let an independent Lean pipeline verify the full original statement.
 
-- Website: https://likc1606.github.io/theorem-os-site/en/
-- Proof archive: https://likc1606.github.io/theorem-os-site/en/archive.html
-- Feedback: https://likc1606.github.io/theorem-os-site/en/feedback.html, or [open an issue](https://github.com/LikC1606/theorem-os-site/issues/new)
+- Website: https://theorem-os.lzh-cf-9x27.workers.dev/en/
+- Proof archive: https://theorem-os.lzh-cf-9x27.workers.dev/en/archive.html
+- Feedback: https://theorem-os.lzh-cf-9x27.workers.dev/en/feedback.html, or [open an issue](https://github.com/LikC1606/theorem-os-site/issues/new)
 
 **The online workbench is coming soon.** Once it opens, you can submit statements in the browser, research with your own API key (OpenAI or a service compatible with the Responses API), and download the Lean source and verification report. [Request early access](https://github.com/LikC1606/theorem-os-site/issues/new?template=early-access.yml) and we will reply in the same issue when it opens. Requests are public, so do not include API keys, email addresses or other personal information. To apply privately, email liuzhenhao@westlake.edu.cn.
 
